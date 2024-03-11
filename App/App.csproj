@@ -8,8 +8,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="C:\Users\Bruker\Code\DAT154\Oblig2\DAT154-Oblig2\DAT154-Oblig2\DAT154-Oblig2.csproj" />
-		<!--<ProjectReference Include="C:\Users\Bruker\Code\DAT154\Oblig2\DAT154-Oblig2\SpaceObjectsForm\SpaceObjectsForm.csproj" />
+		<ProjectReference Include="..\DAT154-Oblig2\DAT154-Oblig2.csproj" />
+		<!--<ProjectReference Include="..\SpaceObjectsForm\SpaceObjectsForm.csproj" />
 			-->
 	</ItemGroup>
 
