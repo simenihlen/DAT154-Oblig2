@@ -4,9 +4,11 @@ using System.Windows.Controls;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
-namespace _5___WPF_Animation {
+namespace _5___WPF_Animation
+{
 
-    public partial class MainWindow : Window {
+    public partial class MainWindow : Window
+    {
         private readonly DispatcherTimer t;
         private readonly Planet p;
         private readonly Planet p2;
@@ -20,10 +22,11 @@ namespace _5___WPF_Animation {
         int time = 0;
         public event Action<int> MoveIt;
 
-        public MainWindow() {
+        public MainWindow()
+        {
             InitializeComponent();
 
-            t = new() 
+            t = new()
             {
                 Interval = new TimeSpan(200000)
             };
@@ -102,13 +105,15 @@ namespace _5___WPF_Animation {
 
         }
 
-        private void Tick(object sender, EventArgs e) {
+        private void Tick(object sender, EventArgs e)
+        {
             MoveIt(time++);
         }
     }
 
 
-    class Planet {
+    class Planet
+    {
 
         public int Xpos { get; set; }
         public int Ypos { get; set; }
@@ -118,7 +123,8 @@ namespace _5___WPF_Animation {
 
         public Ellipse Shape { get; set; }
 
-        public void CalcPos(int time) {
+        public void CalcPos(int time)
+        {
             Canvas c = (Canvas)Shape.Parent;
 
             Xpos = (int)(c.RenderSize.Width / 2 - Shape.Width / 2 +

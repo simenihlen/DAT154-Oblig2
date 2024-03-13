@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:_5___WPF_Animation"
         mc:Ignorable="d"
         Title="MainWindow" Height="1920" Width="1080">
-    <Grid Name="myGrid">
-        <Canvas Margin="10,10,9,8" Name="myCanvas">
-            <Ellipse Name="mercury" Fill="DarkOrange" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
-            <Ellipse Name="venus" Fill="Orange" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
+	<Grid Name="myGrid">
+		<Canvas Margin="10,10,9,8" Name="myCanvas">
+			<Ellipse Name="mercury" Fill="DarkOrange" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
+			<Ellipse Name="venus" Fill="Orange" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
 			<Ellipse Name="earth" Fill="LightBlue" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
 			<Ellipse Name="mars" Fill="Red" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
 			<Ellipse Name="jupiter" Fill="Beige" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
@@ -17,9 +17,9 @@
 			<Ellipse Name="uranus" Fill="CadetBlue" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
 			<Ellipse Name="neptune" Fill="DarkCyan" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
 			<Ellipse Name="pluto" Fill="Bisque" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
-            <Grid Width="{Binding ActualWidth, ElementName=myCanvas}" Height="{Binding ActualHeight, ElementName=myCanvas}">
-                <Ellipse Fill="Yellow" Height="80" Width="80"/>
-            </Grid>
-        </Canvas>
-    </Grid>
+			<Grid Width="{Binding ActualWidth, ElementName=myCanvas}" Height="{Binding ActualHeight, ElementName=myCanvas}">
+				<Ellipse Fill="Yellow" Height="80" Width="80"/>
+			</Grid>
+		</Canvas>
+	</Grid>
 </Window>
