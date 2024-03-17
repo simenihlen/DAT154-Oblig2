@@ -20,7 +20,11 @@ namespace _5___WPF_Animation
         private readonly Planet p8;
         private readonly Planet p9;
         int time = 0;
-        public event Action<int> MoveIt;
+        public event Action<int> MoveIt; //definer egen deligate
+
+        //TODO
+        //Ta i bruk bibliotek og sett inn navn for objektene
+        //Legg til timer i egen klasse
 
         public MainWindow()
         {

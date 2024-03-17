@@ -9,6 +9,7 @@
 	<Grid Name="myGrid">
 		<Canvas Margin="10,10,9,8" Name="myCanvas">
 			<Ellipse Name="mercury" Fill="DarkOrange" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
+			<TextBlock Name ="mercuryText" Text="Mercury" Canvas.Left="100" Canvas.Top="100" />
 			<Ellipse Name="venus" Fill="Orange" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
 			<Ellipse Name="earth" Fill="LightBlue" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
 			<Ellipse Name="mars" Fill="Red" Height="54" Canvas.Left="179" Stroke="Black" Canvas.Top="112" Width="54"/>
