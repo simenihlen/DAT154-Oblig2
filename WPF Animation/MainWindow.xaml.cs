@@ -6,7 +6,7 @@ using System.Windows.Threading;
 
 namespace _5___WPF_Animation
 {
-
+    public delegate void MoveIt(int i); //Her definerer vi vår egen deligate isteden for å bruke Action
     public partial class MainWindow : Window
     {
         private readonly DispatcherTimer t;
@@ -20,11 +20,12 @@ namespace _5___WPF_Animation
         private readonly Planet p8;
         private readonly Planet p9;
         int time = 0;
-        public event Action<int> MoveIt; //definer egen deligate
+        public event MoveIt MoveIt;
 
         //TODO
         //Ta i bruk bibliotek og sett inn navn for objektene
         //Legg til timer i egen klasse
+        //Kanskje lage ellipsene her istendenfor objekter i .xaml filen slik at vi har mer fleksibilitet og det blir mindre krøll
 
         public MainWindow()
         {
@@ -141,6 +142,4 @@ namespace _5___WPF_Animation
 
         }
     }
-
-
 }

@@ -36,13 +36,16 @@ namespace SpaceSim
 
     public class Planet : SpaceObject
     {
-        public double OrbitalDistance { get; set; }
-        public double OrbitalPeriod { get; set; }
+
+        public int Xpos { get; set; }
+        public int Ypos { get; set; }
+        public double OrbitalRadius { get; set; } = 200;
+        public double OrbitalSpeed { get; set; } = 1;
         public List<Moon> Moons { get; set; }
 
-        public Planet(String name, double orbitalDistance, double orbitalPeriod) : base(name) {
-            OrbitalDistance = orbitalDistance;
-            OrbitalPeriod = orbitalPeriod;
+        public Planet(String name, double orbitalRadius, double orbitalSpeed) : base(name) {
+            OrbitalRadius = orbitalRadius;
+            OrbitalSpeed = orbitalSpeed;
             Moons = new List<Moon>();
         }
 
@@ -56,6 +59,7 @@ namespace SpaceSim
             Console.Write("Planet: ");
             base.Draw();
         }
+
     }
 
     public class Moon : SpaceObject

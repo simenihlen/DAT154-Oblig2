@@ -1,0 +1,25 @@
+class Planet
+    {
+
+        public int Xpos { get; set; }
+        public int Ypos { get; set; }
+
+        public double OrbitalRadius { get; set; } = 200;
+        public double OrbitalSpeed { get; set; } = 1;
+
+        public Ellipse Shape { get; set; }
+
+        public void CalcPos(int time)
+        {
+            Canvas c = (Canvas)Shape.Parent;
+
+            Xpos = (int)(c.RenderSize.Width / 2 - Shape.Width / 2 +
+                (Math.Cos(time * OrbitalSpeed * 3.1416 / 180) * OrbitalRadius));
+            Ypos = (int)(c.RenderSize.Height / 2 - Shape.Height / 2 +
+                (Math.Sin(time * OrbitalSpeed * 3.1416 / 180) * OrbitalRadius));
+
+            Canvas.SetLeft(Shape, Xpos);
+            Canvas.SetTop(Shape, Ypos);
+
+        }
+    }
